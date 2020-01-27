@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+.center{
+background-image: url(diff.jpg) ;
+background-repeat:no-repeat;
+padding:30px 40px;
+
+background-position:center;
+background-size:cover;
+background-image-opacity:0.1;
+}
+.center{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+}
+body{
+background-image:url(diff.jpg) ;
+height:100%;
+width:100%;
+opacity:2;
+background-size:cover;
+background-repeat:no-repeat;
+
+
+}
+
+input{
+background:transparent;
+border:none;
+}
+
+.but{
+background:transparent;
+color:white;
+padding:12px;
+cursor:pointer;
+opacity:1;
+border:2px  light black;
+border-radius:20px;
+}
+
+::-ms-input-placeholder{
+color:white;
+font-family:Sans-serif;
+}
+
+
+
+h1{
+color:black;
+text-decoration:underline;
+}
+</style>
+
+<body>
+
+<div class="center"> 
+ 
+  <h1>Login</h1>
+  <input type="text"  id="name" name="name" placeholder="User name"  >
+  <br><br>
+    
+  <input type="password"  id="pass" name="pass" placeholder="Password" >
+  <br><br>
+  <button class="but" onclick="validForm()">Submit</button>
+   
+</div>
+
+  
+
+
+<p id="demo"</p>
+<script>
+
+function validForm(){
+if(document.getElementById("name").value && document.getElementById("pass").value=="tomjerry")
+  {
+  location.assign("http://localhost/prog.html");
+  
+ }
+ else
+  {
+   alert("Incorrect Details!!!");
+   
+  }
+}
+</script>
+
+</body>
+</html>
